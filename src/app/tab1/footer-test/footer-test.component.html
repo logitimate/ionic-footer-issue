@@ -1,0 +1,11 @@
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor="let c of content; let idx = index;" routerLink="footer">
+            {{idx + 1}}: {{ c }}
+            <ion-icon name="close-circle" slot="end"></ion-icon>
+        </ion-item>
+    </ion-list>
+</ion-content>
+<ion-footer>
+    <h3>This is a test footer</h3>
+</ion-footer>
